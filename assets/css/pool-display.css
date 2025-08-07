@@ -1,0 +1,39 @@
+.pool-box {
+  border: 2px solid #0073aa;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background: #f7f9fa;
+}
+
+.pool-box h2 {
+  color: #0073aa;
+  font-size: 1.6em;
+}
+
+.botao-apostar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pool-box.encerrado {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* listar pools */
+.lista-pools {
+    margin-top: 20px;
+}
+
+.lista-pools table th,
+.lista-pools table td {
+    text-align: left;
+    padding: 8px;
+}
+

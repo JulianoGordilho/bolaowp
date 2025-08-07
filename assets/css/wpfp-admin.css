@@ -1,0 +1,297 @@
+/* ------------------------------------------
+🔷 CONTAINER PADRÃO
+------------------------------------------ */
+.wpfp-field {
+  margin-bottom: 20px;
+}
+
+#wpfp_api_error {
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#wpfp-games-container p em {
+  color: #666;
+}
+
+#wpfp-jogos-selecionados {
+  min-height: 100px;
+}
+
+/* ------------------------------------------
+🔷 MENSAGENS INFORMATIVAS
+------------------------------------------ */
+.wpfp-info {
+  border: 1px dashed #0073aa;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f0f8ff;
+  font-size: 14px;
+}
+
+/* ------------------------------------------
+🔷 TABELAS
+------------------------------------------ */
+.wpfp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+
+.wpfp-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: #f4f4f4;
+  z-index: 10;
+  font-size: 11px;
+}
+
+.wpfp-table tfoot td {
+  position: sticky;
+  bottom: 0;
+  background-color: #f4f4f4;
+  z-index: 10;
+}
+
+.wpfp-table th,
+.wpfp-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 11px;
+  background: #fff;
+}
+
+.wpfp-table tbody tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.wpfp-table tbody tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+/* ------------------------------------------
+🔷 WRAPPER COM SCROLL
+------------------------------------------ */
+.wpfp-table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin-bottom: 70px;
+}
+
+/* ------------------------------------------
+🔷 BOTÕES
+------------------------------------------ */
+.wpfp-table button {
+  color: gray;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.wpfp-table button:hover {
+  background-color: #c82333;
+}
+
+/* ------------------------------------------
+🔷 LOGOS DOS TIMES
+------------------------------------------ */
+.wpfp-logo {
+  max-width: 20px;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+/* ------------------------------------------
+🔷 FLEX DOS TIMES
+------------------------------------------ */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: center;
+  align-content: normal;
+}
+
+.flex-items:nth-child(1),
+.flex-items:nth-child(3) {
+  display: block;
+  flex: 0 1 auto;
+  width: 39%;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex: 0 1 auto;
+  width: 10%;
+  text-align: center;
+}
+
+/* ------------------------------------------
+🔷 AUXILIARES DE ALINHAMENTO
+------------------------------------------ */
+.center {
+  text-align: center !important;
+}
+
+.gols {
+  min-width: 30px;
+  text-align: center !important;
+}
+.wpfp-placar {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ------------------------------------------
+🔷 CLASSES DE COLUNA COM LARGURA DEFINIDA
+------------------------------------------ */
+
+/* 🔘 Checkbox */
+.wpfp-table .col-select {
+  width: 30px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* 🔢 ID */
+.wpfp-table .col-id {
+  width: 40px;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* 📅 Data */
+.wpfp-table .col-data {
+  width: 130px;
+  min-width: 110px;
+}
+
+/* ⚽ Times */
+.wpfp-table .col-times {
+  width: 310px;
+  min-width: 310px;
+  overflow: hidden;
+}
+
+/* 🎯 Gols */
+.wpfp-table .col-gols {
+  width: 60px;
+  text-align: center;
+}
+
+/* ✅ Vencedor */
+.wpfp-table .col-vencedor {
+  width: 100px;
+  text-align: center;
+}
+
+/* 🏟️ Estádio / Cidade */
+.wpfp-table .col-estadio,
+.wpfp-table .col-cidade {
+  width: 100px;
+}
+
+/* 🧾 Status */
+.wpfp-table .col-status {
+  width: 70px;
+  text-align: center;
+}
+
+/* 📌 Campeonato */
+.wpfp-table .col-campeonato,
+.wpfp-table .col-pais {
+  width: 130px;
+}
+
+/* 📆 Temporada */
+.wpfp-table .col-temporada {
+  width: 60px;
+  text-align: center;
+}
+
+/* 🔁 Rodada */
+.wpfp-table .col-rodada {
+  width: 80px;
+}
+
+/* ❌ Ação (Remover) */
+.wpfp-table .col-acao {
+  width: 40px;
+  text-align: center;
+}
+
+/* ------------------------------------------
+🔷 BOTÃO DE REMOVER - ÍCONE VERMELHO
+------------------------------------------ */
+.wpfp-remover-jogo {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+}
+.wpfp-remover-jogo:hover {
+  color: darkred;
+}
+
+
+.wpfp-jogos-selecionados {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+.wpfp-jogos-selecionados{
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+
+
+/* ------------------------------------------SCROLLBAR CUSTOMIZADO------------------------------------------ */
+.scroll-wrapper {
+    overflow-y: auto;
+    max-height: 300px;
+    border: 1px solid #ccc;
+}
+
+
+.wpfp-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wpfp-table th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+.api-cancelado {
+    background: #f8d7da !important;
+    color: #842029;
+    font-style: italic;
+}
+
+/* Linha cancelada */
+tr.cancelado {
+  background-color: #444 !important;
+  color: white !important;
+  text-decoration: line-through;
+}

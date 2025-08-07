@@ -1,0 +1,50 @@
+.wpfp-field {
+    margin-bottom: 20px;
+}
+.wpfp-info {
+    padding: 10px;
+    background: #f1f1f1;
+    border-left: 4px solid #0073aa;
+    margin-bottom: 15px;
+}
+.wpfp-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+.wpfp-table th,
+.wpfp-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.wpfp-table th {
+    background-color: #f9f9f9;
+}
+.wpfp-logo,
+.wpfp-flag {
+    height: 24px;
+}
+
+.wpfp-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wpfp-table th,
+.wpfp-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.wpfp-logo,
+.wpfp-flag {
+    height: 24px;
+}
+
+td image {
+    max-width: 100px;
+    height: auto;
+}

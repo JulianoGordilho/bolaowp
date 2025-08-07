@@ -1,0 +1,46 @@
+# 🚫 Ignorar arquivos sensíveis e de cache
+wp-config.php
+.htaccess
+web.config
+readme.html
+license.txt
+
+# 🔧 Ignorar dependências e ambientes locais
+node_modules/
+vendor/
+.env
+.env.*
+
+# ⚙️ Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# 🧪 Ignorar backups temporários e editores
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# 🚀 Ignorar build tools
+dist/
+build/
+npm-debug.log
+yarn-error.log
+
+# 🧩 Ignorar cache do WordPress
+wp-content/cache/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/uploads/backwpup-*
+
+# 📂 Ignorar pastas pesadas ou que não precisam de versionamento
+wp-content/uploads/
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+# ✔️ Se você estiver versionando um plugin específico, **não ignore ele**
+!wp-content/plugins/seu-plugin-personalizado/
+
+# ✅ Para o seu caso (plugin custom), adicione esta exceção:
+!wp-content/plugins/wpfp-selecao-jogos/**

@@ -1,0 +1,183 @@
+  html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #009440;
+        background-image: url('../img/bg-stadium.jpg');
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: multiply;
+      color: #fff;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #000080;
+      color: white;
+      z-index: 1000;
+      padding: 12px 25px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      
+    }
+
+    .header h4 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #FFD700; /* Cor dourada */
+    }
+
+    .header small {
+      font-size: 0.9rem;
+      color: #FFD700;
+    }
+
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .table thead {
+      background-color: #0d6efd;
+      color: #ffffff;
+    }
+
+    .palpite-input {
+      width: 60px;
+      text-align: center; /* Alinha o número digitado */
+      margin: 0 auto;      /* Centraliza o input na célula */
+      display: block;
+    }
+
+    .table-responsive {
+      max-height: 500px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      background: white;
+    }
+
+  .team-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .team-cell img {
+    height: 3.75rem;
+    width: 3.75rem;
+    object-fit: contain;
+    margin-bottom: 5px;
+  }
+
+  .team-cell span {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+
+  .table td:nth-child(4) {
+    text-align: center;
+  }
+
+    @media (max-width: 768px) {
+
+         .table-responsive {
+            max-height: 100%;
+            overflow-y: hidden;
+             font-size: 0.6rem;
+        }
+       
+      .team-cell {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+      }
+      .team-cell img {
+        margin-bottom: 5px;
+         height: 1.5rem;
+      width: 1.5rem;
+      }
+
+      table th:nth-child(1),
+      table td:nth-child(1),
+      table th:nth-child(2),
+      table td:nth-child(2),
+      table th:nth-child(7),
+      table td:nth-child(7) {
+        display: none;
+      }
+    }
+
+    .btn-success {
+      background-color: #FFD700;
+      border: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .btn-secondary {
+      background-color: #0d6efd;
+      border: none;
+    }
+
+    .btn-success:hover, .btn-secondary:hover {
+      opacity: 0.9;
+    }
+
+    .info-palpites{
+      padding: 20px;
+      display: block;
+    }
+
+    .sub-title{
+        color: #FFFFFF;
+    }
+
+
+    //////////////////
+
+   @keyframes brilho {
+  0% {
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  }
+  50% {
+    box-shadow: 0 0 20px #FFA500, 0 0 30px #FFD700;
+  }
+  100% {
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  }
+}
+
+.premiacao-box {
+  background-color: #8B0000;
+  color: #FFD700;
+  border: 3px solid #FFD700;
+  padding: 0.5rem;
+  margin: 3rem auto;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 15px;
+  animation: brilho 2s infinite alternate;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.premiacao-box .titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.premiacao-box .valor {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
